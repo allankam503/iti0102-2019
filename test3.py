@@ -14,11 +14,8 @@ def combo_string(s1: str, s2: str) -> str:
     :param s2:
     :return:
     """
-    s1 + s2 + s1 = a
-    s2 + s1 + s2 = b
-    if len(s2) > len(s1):
-        return a
-    elif len(s1) < len(s2):
-        return b
+    if len(s1) > len(s2):
+        result = s2 + s1 + s2
     else:
-        return False
+        result = s1 + s2 + s1
+    return result
